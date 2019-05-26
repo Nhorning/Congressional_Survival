@@ -10,3 +10,8 @@ This information could be useful for any number of congressional members for det
 ## Data Sets
 The primary dataset is congressional voting records going back to 1981 available from the House and Senate clerk offices via the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
 
+Other datasets, availeble from fivethirtyeight:
+- Partisain lean of districts and states
+- Predictions of partisain votes based on district lean.
+
+## Data Wrangling and Cleaning:
