@@ -30,6 +30,8 @@ Steps:
 
 ## Exploritory Data Analysis
 
-![Visualization: Senate 2019](https://raw.githubusercontent.com/Nhorning/Congressional_Survival/master/images/visualize_session_senate_2019.png)
+![Visualization: Senate 2019](images/visualize_session_senate_2019.png)
 
-![Visualizeation: legend](https://raw.githubusercontent.com/Nhorning/Congressional_Survival/master/images/visualize_session_legend.png)
+![Visualization: legend](images/visualize_session_legend.png)
+
+![Visualization: House 2018](images/visualize_session_house_2018.png)
