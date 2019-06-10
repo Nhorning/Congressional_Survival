@@ -57,7 +57,8 @@ Created functions to:
 
 
 ## Exploritory Data Analysis
-This visualization displays each senator’s vote for current session of congress so far.   Each roll call vote is represented by a a row, and each senator, a column, with the parties shaded in their traditional colors.   The senators are sorted by their ideology using a pre calculated metric (dw_nominate) already available in the data.  This creates a distinct division between Republican and Democrat members, but fits the two independents into different spots within the Democratic side according where they are in the ideological spectrum.  Bernie Sanders, for instance, is registered as an Independent, but placed nearly all the way over to the left. 
+
+This visualization displays each senator’s vote for the current session of congress so far.   Each roll call vote is represented by a a row, and each senator, a column, with the parties shaded in their traditional colors.   The senators are sorted by their ideology using a pre calculated metric (dw_nominate) already available in the data.  This creates a distinct division between Republican and Democrat members, but fits the two independents into different spots within the Democratic side according where they are in the ideological spectrum.  Bernie Sanders, for instance, is registered as an Independent, but placed nearly all the way over to the left. The roll call votes are sorted by how many net yes votes were achieved.  No votes (lighter shades) are subtracted from yes votes (darker shades), excluding any other vote types such as ‘present’ (left blank) to calculate this score.   
 
 ![Visualization: legend](images/visualize_session_legend.png)
 
