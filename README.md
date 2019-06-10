@@ -1,8 +1,8 @@
 # Capstone Project 2: Congressional Survival
 
 ## Problem
-Based on their voting history, what type of congress member is most likely to survive in what political environment? 
-Election results are highly dependent on voter enthusiasm, partisanlean, and the national political environment.  However, when voting on legislation, members of congress in swing districts must do a cost benefit analysis of meeting the partisan preferences of their district or the expectations of their own base. What type of strategy most successfully predicts survival?
+Based on their voting history, what type of congress member is most likely to survive in what political environment?
+Election results are highly dependent on voter enthusiasm, partisan lean, and the national political environment.  However, when voting on legislation, members of congress in swing districts must do a cost benefit analysis of meeting the partisan preferences of their district or the expectations of their own base. What type of strategy most successfully predicts survival?
 
 ## Client / Stakeholder case:
 This information could be useful for any number of congressional members for determining their voting choices, or for National level party organs such as the Democratic National Committee to inform voting strategies. It could also be of interest to any number of political blogs.
@@ -14,23 +14,30 @@ Other datasets, available from fivethirtyeight:
 - Partisan lean of districts and states
 - Predictions of Partisan votes based on district lean.
 
-### Prospective datasets: 
+### Prospective datasets:
   The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
 
 ## Data Wrangling and Cleaning:
 
-As the dataset is being fetched via API, wrangling and cleaning focused mostly on constructing the data from individual API requests into a useful format. The Pro Publica Congress API makes metadata for votes available for a given month chamber and year, and each member's position on a given vote available for individual roll call votes for a given congress number, chamber, sesson, and roll call number.
+As the dataset is being fetched via API, wrangling and cleaning focused mostly on constructing the data from individual API requests into a useful format. The ProPublica Congress API makes metadata for votes available for a given month, chamber (House or Senate)  and year, and each member's position on a given vote available for individual roll call votes for a given congress number, chamber, sesson, and roll call number.  Requests for chunks of this data were iteratively built into DataFrames for further analysis.
 
-### Steps: 
+
+### Example API endpoint:
+GET https://api.propublica.org/congress/v1/{congress}/{chamber}/sessions/{session-number}/votes/{roll-call-number}.json
+
+### Steps:
+
 Created functions to:
 
-1. Request the ProPublica API with an API key for a given end point, and return the response as a dictionary.
+1. Request the ProPublica API for a given end point, and return the response as a dictionary.
 2. Repeat failed requests in case of internet reliability issues.
 3. Construct an endpoint to request meta data for a given year and month. Return it as a DataFrame.
-4. Use the above to request metadata for all months for a given chamber and year, and return a DataFrame multiindexed by congress number, chamber, session, and roll call number of each vote.
-5. Take the index of the metadata for a given year and use it to request each member's position for each vote in that year returning a dataframe with the same index, and a multi-index of each members party, state, district, ideological score, unique identifier, and name. 
-6. Handle missing vote position data by filling rows with 'NaN' values, and [reporting](https://github.com/propublica/congress-api-docs/issues/226) to ProPublica for resolution. 
-7. Take a given year and chamber, return a corosponding dataframe of all the metadata and a seperate dataframe of positions. These functions will check if a there is an existing CSV file for those dataframes in the Data directory, and if so load it. If not, they will construct new dataframes using the API and cac the CSV to the Data directory.
+4. Use the above to request metadata for all months for a given chamber and year, and return a DataFrame multi-indexed by congress number, chamber, session, and roll call number of each vote.
+5. Take the index of the metadata for a given year and use it to request each member's position for each vote in that year. Return a dataframe with the same index, and construct columns using a multi-index of each member's party, state, district, ideological score, unique identifier, and name.
+6. Handle missing vote position data by filling rows with 'NaN' values (these were [reported](https://github.com/propublica/congress-api-docs/issues/226) to ProPublica for resolution).
+7. Take a given year and chamber, return a corresponding dataframe of all the metadata and a separate DataFrame of positions. Check if a there is an existing CSV file for those DataFrames in the Data directory, and if so load it. If not, construct new DataFrames using the API and cache the CSV to the Data directory.
+
+
 
 ### Example metadata DataFrame (first row):
 
