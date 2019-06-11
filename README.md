@@ -64,6 +64,8 @@ This visualization displays each senator’s vote for the current session of con
 
 ![Visualization: Senate 2019](images/visualize_session_senate_2019.png)
 
+Because Republicans control which legislation is brought to the floor,  the right column appears almost solid red, as most roll call votes enjoy their support.   Generally, as net support increases so does the support from Democrats, starting with democrats on the right, and moving further to the left as the overall support becomes more universal, ending with Elizabeth Warren, who has in 2019 has only voted for legislation with near complete Democratic support.   However, support from Republicans seems to mirror this pattern. With roll call votes supported by more than 3 democrats, support tends to build from the left of the party, beginning with susan collins, and moving more towards the right as net support increases.
+
 ![Visualization: House 2018](images/visualize_session_house_2018.png)
 
 ![Visualization: house 2019](images/visualize_session_house_2019.png)
