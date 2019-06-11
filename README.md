@@ -70,6 +70,8 @@ Because Republicans control which legislation is brought to the floor,  the righ
 
 A similar pattern is visible in the current (2019) House. However, since the democrats control the house, it appears in the opposite direction.  Roll calls with more yes than no votes are supported by a solid blue block of Democrat yes votes,  with support from Republicans tending to start on the left and extend toward the right overall support increases.  Roll calls with more no than yes votes are supported by a solid red Republican block. With just a few democrats, tending to the right, voting along with them.  Democrats who are newly elected, and therefore haven’t had their ideological scores calculated, appear over on the right of this visualizations, with a smaller cohort of newly elected republicans.  These Democrats seem to have voted with Republicans a bit more frequently - likely the result of their being largely from swing districts. 
 
+Interestingly, the mirror pattern doesn’t seem to show for the house, in the same way it does for the senate, with support from Democrats on the left remaining solid, for legislation with enough votes to pass, even when supported centrist republicans.  Lest one think this is a feature unique to house democrats, the pattern remains in the republican controlled house of 2018.
+
 ![Visualization: House 2018](images/visualize_session_house_2018.png)
 
 
