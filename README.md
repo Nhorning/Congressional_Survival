@@ -32,12 +32,12 @@ Created functions to:
 1. Request the ProPublica API for a given end point, and return the response as a dictionary.
 2. Repeat failed requests in case of internet reliability issues.
 3. Construct an endpoint to request meta data for a given year and month. Return it as a DataFrame.
-4. Use the above to request metadata for all months for a given chamber and year, and return a DataFrame multi-indexed by congress number, chamber, session, and roll call number of each vote.
-5. Take the index of the metadata for a given year and use it to request each member's position for each vote in that year. Return a dataframe with the same index, and construct columns using a multi-index of each member's party, state, district, ideological score, unique identifier, and name.
+4. Use the above to request metadata for all months for a given chamber and year, and return a [tidy](https://en.wikipedia.org/wiki/Tidy_data) Pandas DataFrame multi-indexed by congress number, chamber, session, and roll call number of each vote.
+5. Take the index of the metadata for a given year and use it to request each member's position for each vote in that year. Return a tidy DataFrame with the same index, and construct columns using a multi-index of each member's party, state, district, ideological score, unique identifier, and name.
 6. Handle missing vote position data by filling rows with 'NaN' values (these were [reported](https://github.com/propublica/congress-api-docs/issues/226) to ProPublica for resolution).
-7. Take a given year and chamber, return a corresponding dataframe of all the metadata and a separate DataFrame of positions. Check if a there is an existing CSV file for those DataFrames in the Data directory, and if so load it. If not, construct new DataFrames using the API and cache the CSV to the Data directory.
+7. Take a given year and chamber, return a corresponding DataFrame of all the metadata and a separate DataFrame of positions. Check if there is an existing CSV file for those DataFrames in the Data directory, and if so load it. If not, construct new DataFrames using the API and cache the CSV to the Data directory. Update data for the current session if a given time frame has passed since the last cache. This function can be called by subsequent visualization code in order to efficiently return the required session.
 
-
+Note: The [Pandas](https://pandas.pydata.org/) package required an upgrade to the current version (2.42) in order to properly sort a multiindex by floats, which is needed in order to sort by ideological score. A version check was added for functions that require this.
 
 ### Example metadata DataFrame (first row):
 
