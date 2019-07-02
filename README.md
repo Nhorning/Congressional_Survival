@@ -79,3 +79,6 @@ Interestingly, the mirror pattern doesn’t seem to show for the house, in the s
 ![Visualization: House 2018](images/visualize_session_house_2018.png)
 
 
+![Years in office v. dw_nominate: House](images/years_in_office_v_dw_nominate_house.png)
+
+![Years in office v. dw_nominate: Senate](images/years_in_office_v_dw_nominate_senate.png)
