@@ -10,8 +10,11 @@ This information could be useful for any number of congressional members for det
 ## Data Sets
 The primary dataset is congressional voting records going back to 1981 available from the House and Senate clerk offices via the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
 
-Other datasets, available from fivethirtyeight:
-- Partisan lean of districts and states
+Other datasets, available from [FiveThirtyEight](https://github.com/fivethirtyeight/data/):
+- Partisan lean of [districts](data/fivethirtyeight_partisan_lean_DISTRICTS) and [states](data/fivethirtyeight_partisan_lean_STATES.csv)
+
+Partisan lean is the average difference between how a state or district votes and how the country votes overall, with 2016 presidential election results weighted 50 percent, 2012 presidential election results weighted 25 percent and results from elections for the state legislature weighted 25 percent.
+
 - Predictions of Partisan votes based on district lean.
 
 ### Prospective datasets:
