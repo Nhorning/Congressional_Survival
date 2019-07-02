@@ -82,3 +82,5 @@ Interestingly, the mirror pattern doesn’t seem to show for the house, in the s
 ![Years in office v. dw_nominate: House](images/years_in_office_v_dw_nominate_house.png)
 
 ![Years in office v. dw_nominate: Senate](images/years_in_office_v_dw_nominate_senate.png)
+
+![Regression and Risiduals](images/regression_residuals.png)
