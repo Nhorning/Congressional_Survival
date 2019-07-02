@@ -78,9 +78,23 @@ Interestingly, the mirror pattern doesn’t seem to show for the house, in the s
 
 ![Visualization: House 2018](images/visualize_session_house_2018.png)
 
+## Which members tend to survive?
+
 
 ![Years in office v. dw_nominate: House](images/years_in_office_v_dw_nominate_house.png)
 
 ![Years in office v. dw_nominate: Senate](images/years_in_office_v_dw_nominate_senate.png)
 
+
+There appears to be a definitive trend, of longer lasting members being more toward the center of their respective side of the political spectrum. In the Senate, dw_nominate scores appear to approach .37 distance from 0 as years in office increase. In the House, scores appear to converge toward .5 distance from 0 as years in office increase. It appears that there are more Republicans with extreme dw_nominate scores that last longer.
+
+### Hypothesis: Members more in line with the party preferences of their district survive longer.
+
+
 ![Regression and Risiduals](images/regression_residuals.png)
+
+
+A significant relationship exists between district lean and ideological score. However, the relationship is not linear. Both parties are less moderate than district lean would predict in swing districts, and less extreme than district lean would predict in highly partisan districts.
+
+## Findings
+
