@@ -15,7 +15,7 @@ Other datasets, available from [FiveThirtyEight](https://github.com/fivethirtyei
 
 Partisan lean is the average difference between how a state or district votes and how the country votes overall, with 2016 presidential election results weighted 50 percent, 2012 presidential election results weighted 25 percent and results from elections for the state legislature weighted 25 percent.
 
-- Predictions of Partisan votes based on district lean.
+- Predictions of partisan votes based on district lean.
 
 ### Prospective datasets:
   The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
