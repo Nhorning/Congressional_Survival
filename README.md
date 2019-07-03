@@ -10,9 +10,12 @@ This information could be useful for any number of congressional members for det
 ## Data Sets
 The primary dataset is congressional voting records going back to 1981 available from the House and Senate clerk offices via the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
 
-Other datasets, available from fivethirtyeight:
-- Partisan lean of districts and states
-- Predictions of Partisan votes based on district lean.
+Other datasets, available from [FiveThirtyEight](https://github.com/fivethirtyeight/data/):
+- Partisan lean of [districts](Data/fivethirtyeight_partisan_lean_DISTRICTS.csv) and [states](Data/fivethirtyeight_partisan_lean_STATES.csv)
+
+Partisan lean is the average difference between how a state or district votes and how the country votes overall, with 2016 presidential election results weighted 50 percent, 2012 presidential election results weighted 25 percent and results from elections for the state legislature weighted 25 percent.
+
+- [Predictions](Data/vote_predictions.csv) of partisan votes based on district lean.
 
 ### Prospective datasets:
   The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
@@ -35,10 +38,10 @@ Created functions to:
 4. Use the above to request metadata for all months for a given chamber and year, and return a [tidy](https://en.wikipedia.org/wiki/Tidy_data) Pandas DataFrame multi-indexed by congress number, chamber, session, and roll call number of each vote.
 5. Take the index of the metadata for a given year and use it to request each member's position for each vote in that year. Return a tidy DataFrame with the same index, and construct columns using a multi-index of each member's party, state, district, ideological score, unique identifier, and name.
 6. Handle missing vote position data by filling rows with 'NaN' values (these were [reported](https://github.com/propublica/congress-api-docs/issues/226) to ProPublica for resolution).
-7. Take a given year and chamber, return a corresponding DataFrame of all the metadata and a separate DataFrame of positions. Check if there is an existing CSV file for those DataFrames in the Data directory, and if so load it. If not, construct new DataFrames using the API and cache the CSV to the Data directory. Update data for the current session if a given time frame has passed since the last cache. This function can be called by subsequent visualization code in order to efficiently return the required session.
+7. Take a given year and chamber, return a corresponding DataFrame of all the metadata and a separate DataFrame of positions. Check if there is an existing CSV file for those DataFrames in the Data/cache directory, and if so load it. If not, construct new DataFrames using the API and cache the CSV to the Data directory. Update data for the current session if a given time frame has passed since the last cache inserting the delta of what has changed since the last sesion. This function can be called by subsequent visualization code in order to efficiently return the required session. CSV format was chosen for open data purposes.
+8. Convert district lean from  FiveThirtyEight from positive (R+x|D+x) values into continuous -1 to +1 scale compatible with ideological score.
 
-Note: The [Pandas](https://pandas.pydata.org/) package required an upgrade to the current version (2.42) in order to properly sort a multiindex by floats, which is needed in order to sort by ideological score. A version check was added for functions that require this.
-
+Note: The [Pandas](https://pandas.pydata.org/) versions 2.42 is required a multiindex by floats. A version check was added for this.
 ### Example metadata DataFrame (first row):
 
 |                       | bill                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | date       | democratic                                                                     | description                                                                                                                                                                                                                                                                                         |   document_number | document_title                                                                                                                                                                                                                                                                                      | independent                                        | question                            | question_text                            | republican                                                                      | result                                    | source                                                                               |   tie_breaker |   tie_breaker_vote | time     | total                                                | url                                                                                                             | vote_type   | vote_uri                                                                  |
@@ -75,4 +78,23 @@ Interestingly, the mirror pattern doesn’t seem to show for the house, in the s
 
 ![Visualization: House 2018](images/visualize_session_house_2018.png)
 
+## Which members tend to survive?
+
+
+![Years in office v. dw_nominate: House](images/years_in_office_v_dw_nominate_house.png)
+
+![Years in office v. dw_nominate: Senate](images/years_in_office_v_dw_nominate_senate.png)
+
+
+There appears to be a definitive trend, of longer lasting members being more toward the center of their respective side of the political spectrum. In the Senate, dw_nominate scores appear to approach .37 distance from 0 as years in office increase. In the House, scores appear to converge toward .5 distance from 0 as years in office increase. It appears that there are more Republicans with extreme dw_nominate scores that last longer.
+
+### Hypothesis: Members more in line with the party preferences of their district survive longer.
+
+
+![Regression and Risiduals](images/regression_residuals.png)
+
+
+A significant relationship exists between district lean and ideological score. However, the relationship is not linear. Both parties are less moderate than district lean would predict in swing districts, and less extreme than district lean would predict in highly partisan districts.
+
+## Findings
 
