@@ -100,10 +100,17 @@ for the 2018 mid terms, FiveThirtyEight compiled partisan lean scores on both st
 
 For the congress in 2018, a significant relationship exists between the partisan lean of a given district or state, and the ideological score of the congressional member there. However, the relationship is not linear. Both parties are less moderate than district lean would predict by linear regression in swing districts/states, and less extreme than district lean would predict in highly partisan areas. In the residual plots on the right, members who are the most out of line with what is predicted by partisan lean are toward the upper and lower ends of the plot.
 
-Members who did not survive the midterms, defined here as having their last day in congress in January of 2019, are marked with an "x." It appears that those members most out of line with their district lean have been eliminated more frequently, however those more extreme than predicted, seem to be eliminated with more frequency than those more moderate than predicted.
+Members who did not survive the midterms, defined here as having their last day in congress in January of 2019, are marked with an "x." It appears that those members most out of line with their district lean have been eliminated more frequently, however those more extreme than predicted, seem to be eliminated with more frequency than those more moderate than predicted. This apparent trend can be investigate further with more data.
 
-Note that in the Senate, this plot does not take into account which members stood for re-election.
+Note that in the Senate, this plot does not take into account which members stood for re-election. 
 
 
-## Findings
+## Initial Findings
 
+1. Members with voting records more aligned with the partisan lean of their districts appear to survive longer
+
+2. Members with voting records more extreme than the partisan lean of their constituents appear less likely to survive than those with a voting record more moderate than their constituents. 
+
+3. There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
+
+4. Clear patterns exist in roll call voting that can perhaps be used to distinguish successful voting strategies.
