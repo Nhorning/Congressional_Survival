@@ -1,10 +1,10 @@
-# Capstone Project 2: Congressional Survival
+# Milestone Report - Capstone Project 2: Congressional Survival 
 
 ## Problem
 Based on their voting history, what type of congressional member is most likely to survive in what political environment?
 Election results are highly dependent on voter enthusiasm, partisan lean, and the national political environment.  However, when voting on legislation, members of congress in swing districts must do a cost benefit analysis of meeting the partisan preferences of their district or the expectations of their own base. What type of strategy most successfully predicts survival?
 
-## Client / Stakeholder case:
+## Client / Stakeholder case
 The theoretical client is an individual representative or senator wishing to know how their voting behavior might influence their chances of re-election, or a National level party organ such as the Democratic National Committee looking to inform voting strategy. 
 
 ## Data Sets
@@ -22,7 +22,7 @@ Partisan lean is the average difference between how a state or district votes an
 - The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
 </details>
 
-## Data Wrangling and Cleaning:
+## Data Wrangling and Cleaning
 <details>
 As the dataset is being fetched via API, wrangling and cleaning focused mostly on constructing the data from individual API requests into a useful format. The ProPublica Congress API makes metadata for votes available for a given month, chamber (House or Senate)  and year, and each member's position on a given vote available for individual roll call votes for a given congress number, chamber, session, and roll call number.  Requests for chunks of this data were iteratively built into DataFrames for further analysis.
 
