@@ -5,20 +5,20 @@ Based on their voting history, what type of congress member is most likely to su
 Election results are highly dependent on voter enthusiasm, partisan lean, and the national political environment.  However, when voting on legislation, members of congress in swing districts must do a cost benefit analysis of meeting the partisan preferences of their district or the expectations of their own base. What type of strategy most successfully predicts survival?
 
 ## Client / Stakeholder case:
-This information could be useful for any number of congressional members for determining their voting choices, or for National level party organs such as the Democratic National Committee to inform voting strategies. It could also be of interest to any number of political blogs.
+The theoretical client is an individual representative or senator wishing to know how their voting behavior might influence their chances of re-election, or a National level party organ such as the Democratic National Committee looking to inform voting strategy. 
 
 ## Data Sets
 The primary dataset is congressional voting records going back to 1981 available from the House and Senate clerk offices via the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
 
-Other datasets, available from [FiveThirtyEight](https://github.com/fivethirtyeight/data/):
-- Partisan lean of [districts](Data/fivethirtyeight_partisan_lean_DISTRICTS.csv) and [states](Data/fivethirtyeight_partisan_lean_STATES.csv)
+
+- Partisan lean of [districts](Data/fivethirtyeight_partisan_lean_DISTRICTS.csv) and [states](Data/fivethirtyeight_partisan_lean_STATES.csv) available from [FiveThirtyEight](https://github.com/fivethirtyeight/data/):
 
 Partisan lean is the average difference between how a state or district votes and how the country votes overall, with 2016 presidential election results weighted 50 percent, 2012 presidential election results weighted 25 percent and results from elections for the state legislature weighted 25 percent.
 
-- [Predictions](Data/vote_predictions.csv) of partisan votes based on district lean.
-
 ### Prospective datasets:
-  The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
+
+- [Predictions](Data/vote_predictions.csv) of partisan votes based on district lean, also available from fivethirtyeight
+- The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
 
 ## Data Wrangling and Cleaning:
 
