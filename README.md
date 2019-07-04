@@ -93,8 +93,8 @@ There appears to be a definitive trend, of longer lasting members being more tow
 ### Hypothesis: Members more in line with the party preferences of their district survive longer.
 
 
-![Regression and Risiduals](images/regression_residuals.png)
-
+![Regression and Residuals](images/regression_residuals.png)
+![Regression and Residuals](images/regression_residuals_senate.png)
 
 for the 2018 mid terms, FiveThirtyEight compiled partisan lean scores on both state and voting district levels, using totals from the previous two elections.
 
