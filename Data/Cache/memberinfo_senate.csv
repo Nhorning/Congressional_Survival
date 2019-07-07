@@ -1,104 +1,104 @@
 ,current_party,dw_nominate,end_date,first_name,in_office,last_name,member_id,middle_name,name,party,start_date,state
-A000360,R,0.323,2021-01-03,Lamar,True,Alexander,A000360,,Lamar Alexander,R,2003-01-07,TN
-B001230,D,-0.518,2021-01-03,Tammy,True,Baldwin,B001230,,Tammy Baldwin,D,2013-01-03,WI
-B001261,R,0.538,2021-01-03,John,True,Barrasso,B001261,,John Barrasso,R,2007-06-22,WY
-B001267,D,-0.209,2021-01-03,Michael,True,Bennet,B001267,,Michael Bennet,D,2009-01-22,CO
-B001243,R,0.615,2021-01-03,Marsha,True,Blackburn,B001243,,Marsha Blackburn,R,2019-01-03,TN
-B001277,D,-0.413,2021-01-03,Richard,True,Blumenthal,B001277,,Richard Blumenthal,D,2011-01-05,CT
-B000575,R,0.429,2021-01-03,Roy,True,Blunt,B000575,,Roy Blunt,R,2011-01-05,MO
-B001288,D,-0.62,2021-01-03,Cory,True,Booker,B001288,,Cory Booker,D,2013-10-31,NJ
-B001236,R,0.401,2021-01-03,John,True,Boozman,B001236,,John Boozman,R,2011-01-05,AR
-B001310,R,,2021-01-03,Mike,True,Braun,B001310,,Mike Braun,R,2019-01-03,IN
-B000944,D,-0.435,2021-01-03,Sherrod,True,Brown,B000944,,Sherrod Brown,D,2007-01-04,OH
-B001135,R,0.452,2021-01-03,Richard,True,Burr,B001135,M.,Richard M. Burr,R,2005-01-04,NC
-C000127,D,-0.291,2021-01-03,Maria,True,Cantwell,C000127,,Maria Cantwell,D,2001-01-03,WA
-C001047,R,0.261,2021-01-03,Shelley,True,Capito,C001047,Moore,Shelley Moore Capito,R,2015-01-06,WV
-C000141,D,-0.326,2021-01-03,Benjamin,True,Cardin,C000141,L.,Benjamin L. Cardin,D,2007-01-04,MD
-C000174,D,-0.175,2021-01-03,Thomas,True,Carper,C000174,R.,Thomas R. Carper,D,2001-01-03,DE
-C001070,D,-0.304,2021-01-03,Bob,True,Casey,C001070,,Bob Casey,D,2007-01-04,PA
-C001075,R,0.451,2021-01-03,Bill,True,Cassidy,C001075,,Bill Cassidy,R,2015-01-06,LA
-C001035,R,0.111,2021-01-03,Susan,True,Collins,C001035,,Susan Collins,R,1997-01-07,ME
-C001088,D,-0.238,2021-01-03,Christopher,True,Coons,C001088,A.,Christopher A. Coons,D,2010-11-15,DE
-C001056,R,0.495,2021-01-03,John,True,Cornyn,C001056,,John Cornyn,R,2002-12-02,TX
-C001113,D,-0.38,2021-01-03,Catherine,True,Cortez Masto,C001113,,Catherine Cortez Masto,D,2017-01-03,NV
-C001095,R,0.603,2021-01-03,Tom,True,Cotton,C001095,,Tom Cotton,R,2015-01-06,AR
-C001096,R,0.392,2021-01-03,Kevin,True,Cramer,C001096,,Kevin Cramer,R,2019-01-03,ND
-C000880,R,0.51,2021-01-03,Michael,True,Crapo,C000880,D.,Michael D. Crapo,R,1999-01-06,ID
-C001098,R,0.819,2021-01-03,Ted,True,Cruz,C001098,,Ted Cruz,R,2013-01-03,TX
-D000618,R,0.543,2021-01-03,Steve,True,Daines,D000618,,Steve Daines,R,2015-01-06,MT
-D000622,D,-0.323,2021-01-03,Tammy,True,Duckworth,D000622,,Tammy Duckworth,D,2017-01-03,IL
-D000563,D,-0.361,2021-01-03,Richard,True,Durbin,D000563,J.,Richard J. Durbin,D,1997-01-07,IL
-E000285,R,0.54,2021-01-03,Michael,True,Enzi,E000285,B.,Michael B. Enzi,R,1997-01-07,WY
-E000295,R,0.504,2021-01-03,Joni,True,Ernst,E000295,,Joni Ernst,R,2015-01-06,IA
-F000062,D,-0.27,2021-01-03,Dianne,True,Feinstein,F000062,,Dianne Feinstein,D,1992-11-10,CA
-F000463,R,0.466,2021-01-03,Deb,True,Fischer,F000463,,Deb Fischer,R,2013-01-03,NE
-G000562,R,0.449,2021-01-03,Cory,True,Gardner,G000562,,Cory Gardner,R,2015-01-06,CO
-G000555,D,-0.427,2021-01-03,Kirsten,True,Gillibrand,G000555,E.,Kirsten E. Gillibrand,D,2009-01-27,NY
-G000359,R,0.407,2021-01-03,Lindsey,True,Graham,G000359,,Lindsey Graham,R,2003-01-07,SC
-G000386,R,0.344,2021-01-03,Charles,True,Grassley,G000386,E.,Charles E. Grassley,R,1981-01-05,IA
-H001075,D,-0.696,2021-01-03,Kamala,True,Harris,H001075,,Kamala Harris,D,2017-01-03,CA
-H001076,D,-0.252,2021-01-03,Margaret,True,Hassan,H001076,,Margaret Hassan,D,2017-01-03,NH
-H001089,R,,2021-01-03,Joshua,True,Hawley,H001089,,Joshua Hawley,R,2019-01-03,MO
-H001046,D,-0.305,2021-01-03,Martin,True,Heinrich,H001046,,Martin Heinrich,D,2013-01-03,NM
-H001042,D,-0.492,2021-01-03,Mazie,True,Hirono,H001042,K.,Mazie K. Hirono,D,2013-01-03,HI
-H001061,R,0.342,2021-01-03,John,True,Hoeven,H001061,,John Hoeven,R,2011-01-05,ND
-H001079,R,0.378,2021-01-03,Cindy,True,Hyde-Smith,H001079,,Cindy Hyde-Smith,R,2018-04-09,MS
-I000024,R,0.555,2021-01-03,James,True,Inhofe,I000024,M.,James M. Inhofe,R,1993-01-05,OK
-I000055,R,0.402,2021-01-03,Johnny,True,Isakson,I000055,,Johnny Isakson,R,2005-01-04,GA
-J000293,R,0.601,2021-01-03,Ron,True,Johnson,J000293,,Ron Johnson,R,2011-01-05,WI
 J000300,D,-0.105,2021-01-03,Doug,True,Jones,J000300,,Doug Jones,D,2018-01-03,AL
-K000384,D,-0.237,2021-01-03,Tim,True,Kaine,K000384,,Tim Kaine,D,2013-01-03,VA
-K000393,R,0.544,2021-01-03,John,True,Kennedy,K000393,,John Kennedy,R,2017-01-03,LA
-K000383,ID,-0.154,2021-01-03,Angus,True,King,K000383,,Angus King,ID,2013-01-03,ME
-K000367,D,-0.257,2021-01-03,Amy,True,Klobuchar,K000367,,Amy Klobuchar,D,2007-01-04,MN
-L000575,R,0.584,2021-01-03,James,True,Lankford,L000575,,James Lankford,R,2015-01-06,OK
-L000174,D,-0.369,2021-01-03,Patrick,True,Leahy,L000174,J.,Patrick J. Leahy,D,1975-01-14,VT
-L000577,R,0.918,2021-01-03,Mike,True,Lee,L000577,,Mike Lee,R,2011-01-05,UT
-M001183,D,-0.058,2021-01-03,Joe,True,Manchin,M001183,,Joe Manchin III,D,2010-11-15,WV
-M000133,D,-0.505,2021-01-03,Edward,True,Markey,M000133,J.,Edward J. Markey,D,2013-07-16,MA
-M000355,R,0.404,2021-01-03,Mitch,True,McConnell,M000355,,Mitch McConnell,R,1985-01-03,KY
-M001197,R,0.347,2021-01-03,Martha,True,McSally,M001197,,Martha McSally,R,2019-01-03,AZ
-M000639,D,-0.363,2021-01-03,Robert,True,Menendez,M000639,,Robert Menendez,D,2006-01-18,NJ
-M001176,D,-0.475,2021-01-03,Jeff,True,Merkley,M001176,,Jeff Merkley,D,2009-01-06,OR
-M000934,R,0.414,2021-01-03,Jerry,True,Moran,M000934,,Jerry Moran,R,2011-01-05,KS
-M001153,R,0.209,2021-01-03,Lisa,True,Murkowski,M001153,,Lisa Murkowski,R,2001-01-03,AK
-M001169,D,-0.302,2021-01-03,Christopher,True,Murphy,M001169,S.,Christopher S. Murphy,D,2013-01-03,CT
-M001111,D,-0.343,2021-01-03,Patty,True,Murray,M001111,,Patty Murray,D,1993-01-05,WA
-P000603,R,0.878,2021-01-03,Rand,True,Paul,P000603,,Rand Paul,R,2011-01-05,KY
-P000612,R,0.586,2021-01-03,David,True,Perdue,P000612,,David Perdue,R,2015-01-06,GA
-P000595,D,-0.24,2021-01-03,Gary,True,Peters,P000595,,Gary Peters,D,2015-01-06,MI
-P000449,R,0.374,2021-01-03,Rob,True,Portman,P000449,,Rob Portman,R,2011-01-05,OH
-R000122,D,-0.381,2021-01-03,Jack,True,Reed,R000122,,Jack Reed,D,1997-01-07,RI
-R000584,R,0.631,2021-01-03,Jim,True,Risch,R000584,,Jim Risch,R,2009-01-06,ID
-R000307,R,0.414,2021-01-03,Pat,True,Roberts,R000307,,Pat Roberts,R,1997-01-07,KS
-R000615,R,,2021-01-03,Mitt,True,Romney,R000615,,Mitt Romney,R,2019-01-03,UT
-R000608,D,-0.248,2021-01-03,Jacky,True,Rosen,R000608,,Jacky Rosen,D,2019-01-03,NV
-R000605,R,0.384,2021-01-03,Mike,True,Rounds,R000605,,Mike Rounds,R,2015-01-06,SD
-R000595,R,0.581,2021-01-03,Marco,True,Rubio,R000595,,Marco Rubio,R,2011-01-05,FL
-S000033,I,-0.524,2021-01-03,Bernard,True,Sanders,S000033,,Bernard Sanders,ID,2007-01-04,VT
-S001197,R,0.809,2021-01-03,Ben,True,Sasse,S001197,,Ben Sasse,R,2015-01-06,NE
-S001194,D,-0.425,2021-01-03,Brian,True,Schatz,S001194,,Brian Schatz,D,2012-12-27,HI
-S000148,D,-0.352,2021-01-03,Charles,True,Schumer,S000148,E.,Charles E. Schumer,D,1999-01-06,NY
-S001217,R,,2021-01-03,Rick,True,Scott,S001217,,Rick Scott,R,2019-01-08,FL
-S001184,R,0.642,2021-01-03,Tim,True,Scott,S001184,,Tim Scott,R,2013-01-03,SC
-S001181,D,-0.249,2021-01-03,Jeanne,True,Shaheen,S001181,,Jeanne Shaheen,D,2009-01-06,NH
-S000320,R,0.432,2021-01-03,Richard,True,Shelby,S000320,C.,Richard C. Shelby,R,1987-01-06,AL
 S001191,D,-0.106,2021-01-03,Kyrsten,True,Sinema,S001191,,Kyrsten Sinema,D,2019-01-03,AZ
-S001203,D,-0.364,2021-01-03,Tina,True,Smith,S001203,,Tina Smith,D,2018-01-03,MN
-S000770,D,-0.332,2021-01-03,Debbie,True,Stabenow,S000770,,Debbie Stabenow,D,2001-01-03,MI
-S001198,R,0.465,2021-01-03,Dan,True,Sullivan,S001198,,Dan Sullivan,R,2015-01-06,AK
-T000464,D,-0.212,2021-01-03,Jon,True,Tester,T000464,,Jon Tester,D,2007-01-04,MT
-T000250,R,0.41,2021-01-03,John,True,Thune,T000250,,John Thune,R,2005-01-04,SD
-T000476,R,0.416,2021-01-03,Thom,True,Tillis,T000476,,Thom Tillis,R,2015-01-06,NC
-T000461,R,0.644,2021-01-03,Patrick,True,Toomey,T000461,J.,Patrick J. Toomey,R,2011-01-05,PA
-U000039,D,-0.456,2021-01-03,Tom,True,Udall,U000039,,Tom Udall,D,2009-01-06,NM
-V000128,D,-0.39,2021-01-03,Chris,True,Van Hollen,V000128,,Chris Van Hollen,D,2017-01-03,MD
-W000805,D,-0.196,2021-01-03,Mark,True,Warner,W000805,,Mark Warner,D,2009-01-06,VA
+H001075,D,-0.696,2021-01-03,Kamala,True,Harris,H001075,,Kamala Harris,D,2017-01-03,CA
+F000062,D,-0.27,2021-01-03,Dianne,True,Feinstein,F000062,,Dianne Feinstein,D,1992-11-10,CA
+B001267,D,-0.209,2021-01-03,Michael,True,Bennet,B001267,,Michael Bennet,D,2009-01-22,CO
+B001277,D,-0.413,2021-01-03,Richard,True,Blumenthal,B001277,,Richard Blumenthal,D,2011-01-05,CT
+M001169,D,-0.302,2021-01-03,Christopher,True,Murphy,M001169,S.,Christopher S. Murphy,D,2013-01-03,CT
+C001088,D,-0.238,2021-01-03,Christopher,True,Coons,C001088,A.,Christopher A. Coons,D,2010-11-15,DE
+C000174,D,-0.175,2021-01-03,Thomas,True,Carper,C000174,R.,Thomas R. Carper,D,2001-01-03,DE
+H001042,D,-0.492,2021-01-03,Mazie,True,Hirono,H001042,K.,Mazie K. Hirono,D,2013-01-03,HI
+S001194,D,-0.425,2021-01-03,Brian,True,Schatz,S001194,,Brian Schatz,D,2012-12-27,HI
+D000563,D,-0.361,2021-01-03,Richard,True,Durbin,D000563,J.,Richard J. Durbin,D,1997-01-07,IL
+D000622,D,-0.323,2021-01-03,Tammy,True,Duckworth,D000622,,Tammy Duckworth,D,2017-01-03,IL
 W000817,D,-0.767,2021-01-03,Elizabeth,True,Warren,W000817,,Elizabeth Warren,D,2013-01-03,MA
-W000802,D,-0.393,2021-01-03,Sheldon,True,Whitehouse,W000802,,Sheldon Whitehouse,D,2007-01-04,RI
-W000437,R,0.377,2021-01-03,Roger,True,Wicker,W000437,,Roger Wicker,R,2007-12-31,MS
+M000133,D,-0.505,2021-01-03,Edward,True,Markey,M000133,J.,Edward J. Markey,D,2013-07-16,MA
+V000128,D,-0.39,2021-01-03,Chris,True,Van Hollen,V000128,,Chris Van Hollen,D,2017-01-03,MD
+C000141,D,-0.326,2021-01-03,Benjamin,True,Cardin,C000141,L.,Benjamin L. Cardin,D,2007-01-04,MD
+S000770,D,-0.332,2021-01-03,Debbie,True,Stabenow,S000770,,Debbie Stabenow,D,2001-01-03,MI
+P000595,D,-0.24,2021-01-03,Gary,True,Peters,P000595,,Gary Peters,D,2015-01-06,MI
+S001203,D,-0.364,2021-01-03,Tina,True,Smith,S001203,,Tina Smith,D,2018-01-03,MN
+K000367,D,-0.257,2021-01-03,Amy,True,Klobuchar,K000367,,Amy Klobuchar,D,2007-01-04,MN
+T000464,D,-0.212,2021-01-03,Jon,True,Tester,T000464,,Jon Tester,D,2007-01-04,MT
+H001076,D,-0.252,2021-01-03,Margaret,True,Hassan,H001076,,Margaret Hassan,D,2017-01-03,NH
+S001181,D,-0.249,2021-01-03,Jeanne,True,Shaheen,S001181,,Jeanne Shaheen,D,2009-01-06,NH
+B001288,D,-0.62,2021-01-03,Cory,True,Booker,B001288,,Cory Booker,D,2013-10-31,NJ
+M000639,D,-0.363,2021-01-03,Robert,True,Menendez,M000639,,Robert Menendez,D,2006-01-18,NJ
+U000039,D,-0.456,2021-01-03,Tom,True,Udall,U000039,,Tom Udall,D,2009-01-06,NM
+H001046,D,-0.305,2021-01-03,Martin,True,Heinrich,H001046,,Martin Heinrich,D,2013-01-03,NM
+C001113,D,-0.38,2021-01-03,Catherine,True,Cortez Masto,C001113,,Catherine Cortez Masto,D,2017-01-03,NV
+R000608,D,-0.248,2021-01-03,Jacky,True,Rosen,R000608,,Jacky Rosen,D,2019-01-03,NV
+G000555,D,-0.427,2021-01-03,Kirsten,True,Gillibrand,G000555,E.,Kirsten E. Gillibrand,D,2009-01-27,NY
+S000148,D,-0.352,2021-01-03,Charles,True,Schumer,S000148,E.,Charles E. Schumer,D,1999-01-06,NY
+B000944,D,-0.435,2021-01-03,Sherrod,True,Brown,B000944,,Sherrod Brown,D,2007-01-04,OH
+M001176,D,-0.475,2021-01-03,Jeff,True,Merkley,M001176,,Jeff Merkley,D,2009-01-06,OR
 W000779,D,-0.32,2021-01-03,Ron,True,Wyden,W000779,,Ron Wyden,D,1996-02-06,OR
+C001070,D,-0.304,2021-01-03,Bob,True,Casey,C001070,,Bob Casey,D,2007-01-04,PA
+W000802,D,-0.393,2021-01-03,Sheldon,True,Whitehouse,W000802,,Sheldon Whitehouse,D,2007-01-04,RI
+R000122,D,-0.381,2021-01-03,Jack,True,Reed,R000122,,Jack Reed,D,1997-01-07,RI
+K000384,D,-0.237,2021-01-03,Tim,True,Kaine,K000384,,Tim Kaine,D,2013-01-03,VA
+W000805,D,-0.196,2021-01-03,Mark,True,Warner,W000805,,Mark Warner,D,2009-01-06,VA
+L000174,D,-0.369,2021-01-03,Patrick,True,Leahy,L000174,J.,Patrick J. Leahy,D,1975-01-14,VT
+M001111,D,-0.343,2021-01-03,Patty,True,Murray,M001111,,Patty Murray,D,1993-01-05,WA
+C000127,D,-0.291,2021-01-03,Maria,True,Cantwell,C000127,,Maria Cantwell,D,2001-01-03,WA
+B001230,D,-0.518,2021-01-03,Tammy,True,Baldwin,B001230,,Tammy Baldwin,D,2013-01-03,WI
+M001183,D,-0.058,2021-01-03,Joe,True,Manchin,M001183,,Joe Manchin III,D,2010-11-15,WV
+K000383,ID,-0.154,2021-01-03,Angus,True,King,K000383,,Angus King,ID,2013-01-03,ME
+S000033,I,-0.524,2021-01-03,Bernard,True,Sanders,S000033,,Bernard Sanders,ID,2007-01-04,VT
+M001153,R,0.209,2021-01-03,Lisa,True,Murkowski,M001153,,Lisa Murkowski,R,2001-01-03,AK
+S001198,R,0.465,2021-01-03,Dan,True,Sullivan,S001198,,Dan Sullivan,R,2015-01-06,AK
+S000320,R,0.432,2021-01-03,Richard,True,Shelby,S000320,C.,Richard C. Shelby,R,1987-01-06,AL
+B001236,R,0.401,2021-01-03,John,True,Boozman,B001236,,John Boozman,R,2011-01-05,AR
+C001095,R,0.603,2021-01-03,Tom,True,Cotton,C001095,,Tom Cotton,R,2015-01-06,AR
+M001197,R,0.347,2021-01-03,Martha,True,McSally,M001197,,Martha McSally,R,2019-01-03,AZ
+G000562,R,0.449,2021-01-03,Cory,True,Gardner,G000562,,Cory Gardner,R,2015-01-06,CO
+R000595,R,0.581,2021-01-03,Marco,True,Rubio,R000595,,Marco Rubio,R,2011-01-05,FL
+S001217,R,,2021-01-03,Rick,True,Scott,S001217,,Rick Scott,R,2019-01-08,FL
+I000055,R,0.402,2021-01-03,Johnny,True,Isakson,I000055,,Johnny Isakson,R,2005-01-04,GA
+P000612,R,0.586,2021-01-03,David,True,Perdue,P000612,,David Perdue,R,2015-01-06,GA
+G000386,R,0.344,2021-01-03,Charles,True,Grassley,G000386,E.,Charles E. Grassley,R,1981-01-05,IA
+E000295,R,0.504,2021-01-03,Joni,True,Ernst,E000295,,Joni Ernst,R,2015-01-06,IA
+C000880,R,0.51,2021-01-03,Michael,True,Crapo,C000880,D.,Michael D. Crapo,R,1999-01-06,ID
+R000584,R,0.631,2021-01-03,Jim,True,Risch,R000584,,Jim Risch,R,2009-01-06,ID
+B001310,R,,2021-01-03,Mike,True,Braun,B001310,,Mike Braun,R,2019-01-03,IN
 Y000064,R,0.483,2021-01-03,Todd,True,Young,Y000064,,Todd Young,R,2017-01-03,IN
+M000934,R,0.414,2021-01-03,Jerry,True,Moran,M000934,,Jerry Moran,R,2011-01-05,KS
+R000307,R,0.414,2021-01-03,Pat,True,Roberts,R000307,,Pat Roberts,R,1997-01-07,KS
+M000355,R,0.404,2021-01-03,Mitch,True,McConnell,M000355,,Mitch McConnell,R,1985-01-03,KY
+P000603,R,0.878,2021-01-03,Rand,True,Paul,P000603,,Rand Paul,R,2011-01-05,KY
+C001075,R,0.451,2021-01-03,Bill,True,Cassidy,C001075,,Bill Cassidy,R,2015-01-06,LA
+K000393,R,0.544,2021-01-03,John,True,Kennedy,K000393,,John Kennedy,R,2017-01-03,LA
+C001035,R,0.111,2021-01-03,Susan,True,Collins,C001035,,Susan Collins,R,1997-01-07,ME
+B000575,R,0.429,2021-01-03,Roy,True,Blunt,B000575,,Roy Blunt,R,2011-01-05,MO
+H001089,R,,2021-01-03,Joshua,True,Hawley,H001089,,Joshua Hawley,R,2019-01-03,MO
+W000437,R,0.377,2021-01-03,Roger,True,Wicker,W000437,,Roger Wicker,R,2007-12-31,MS
+H001079,R,0.378,2021-01-03,Cindy,True,Hyde-Smith,H001079,,Cindy Hyde-Smith,R,2018-04-09,MS
+D000618,R,0.543,2021-01-03,Steve,True,Daines,D000618,,Steve Daines,R,2015-01-06,MT
+T000476,R,0.416,2021-01-03,Thom,True,Tillis,T000476,,Thom Tillis,R,2015-01-06,NC
+B001135,R,0.452,2021-01-03,Richard,True,Burr,B001135,M.,Richard M. Burr,R,2005-01-04,NC
+H001061,R,0.342,2021-01-03,John,True,Hoeven,H001061,,John Hoeven,R,2011-01-05,ND
+C001096,R,0.392,2021-01-03,Kevin,True,Cramer,C001096,,Kevin Cramer,R,2019-01-03,ND
+F000463,R,0.466,2021-01-03,Deb,True,Fischer,F000463,,Deb Fischer,R,2013-01-03,NE
+S001197,R,0.809,2021-01-03,Ben,True,Sasse,S001197,,Ben Sasse,R,2015-01-06,NE
+P000449,R,0.374,2021-01-03,Rob,True,Portman,P000449,,Rob Portman,R,2011-01-05,OH
+I000024,R,0.555,2021-01-03,James,True,Inhofe,I000024,M.,James M. Inhofe,R,1993-01-05,OK
+L000575,R,0.584,2021-01-03,James,True,Lankford,L000575,,James Lankford,R,2015-01-06,OK
+T000461,R,0.644,2021-01-03,Patrick,True,Toomey,T000461,J.,Patrick J. Toomey,R,2011-01-05,PA
+G000359,R,0.407,2021-01-03,Lindsey,True,Graham,G000359,,Lindsey Graham,R,2003-01-07,SC
+S001184,R,0.642,2021-01-03,Tim,True,Scott,S001184,,Tim Scott,R,2013-01-03,SC
+R000605,R,0.384,2021-01-03,Mike,True,Rounds,R000605,,Mike Rounds,R,2015-01-06,SD
+T000250,R,0.41,2021-01-03,John,True,Thune,T000250,,John Thune,R,2005-01-04,SD
+A000360,R,0.323,2021-01-03,Lamar,True,Alexander,A000360,,Lamar Alexander,R,2003-01-07,TN
+B001243,R,0.615,2021-01-03,Marsha,True,Blackburn,B001243,,Marsha Blackburn,R,2019-01-03,TN
+C001056,R,0.495,2021-01-03,John,True,Cornyn,C001056,,John Cornyn,R,2002-12-02,TX
+C001098,R,0.819,2021-01-03,Ted,True,Cruz,C001098,,Ted Cruz,R,2013-01-03,TX
+L000577,R,0.918,2021-01-03,Mike,True,Lee,L000577,,Mike Lee,R,2011-01-05,UT
+R000615,R,,2021-01-03,Mitt,True,Romney,R000615,,Mitt Romney,R,2019-01-03,UT
+J000293,R,0.601,2021-01-03,Ron,True,Johnson,J000293,,Ron Johnson,R,2011-01-05,WI
+C001047,R,0.261,2021-01-03,Shelley,True,Capito,C001047,Moore,Shelley Moore Capito,R,2015-01-06,WV
+B001261,R,0.538,2021-01-03,John,True,Barrasso,B001261,,John Barrasso,R,2007-06-22,WY
+E000285,R,0.54,2021-01-03,Michael,True,Enzi,E000285,B.,Michael B. Enzi,R,1997-01-07,WY
 C000567,R,0.287,2018-04-01,Thad,False,Cochran,C000567,,Thad Cochran,R,1977-01-04,MS
 C001071,R,0.395,2019-01-03,Bob,False,Corker,C001071,,Bob Corker,R,2007-01-04,TN
 D000607,D,-0.119,2019-01-03,Joe,False,Donnelly,D000607,,Joe Donnelly,D,2013-01-03,IN
