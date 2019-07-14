@@ -109,7 +109,40 @@ Members who did not survive the midterms, defined here as having their last day 
 Note that in the Senate, this plot does not take into account which members stood for re-election. 
 </details>
 
-## Initial Findings
+## Machine Learning
+
+### Dimension Reduction
+</details>
+
+![dimension_v_explained_variance](images/dimension_v_explained_variance.png)
+
+![PCA_House_Party](images/PCA_House_Party.png)
+![PCA_Senate_Party](images/PCA_Senate_Party.png)
+
+![lean_v_component_0_house](images/lean_v_componet_0_house.png)
+
+</details>
+
+### Clustering
+</details>
+
+![PCA_House_Cluster](images/PCA_House_Cluster.png)
+![PCA_Senate_Cluster](images/PCA_Senate_Cluster.png)
+
+</details>
+
+### Predictive Modeling
+</details>
+
+![RBF_SVM_Without](images/RBF_SVM_Without.png)
+![RBF_SVM_With](images/RBF_SVM_With.png)
+
+![CV_scores_without](images/CV_scores_without.png)
+![Cv_scores_with.png](images/Cv_scores_with.png)
+
+</details>
+
+## Findings (need to update)
 
 1. Members with voting records more aligned with the partisan lean of their districts appear to survive longer
 
@@ -118,3 +151,5 @@ Note that in the Senate, this plot does not take into account which members stoo
 3. There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
 
 4. Clear patterns exist in roll call voting that can perhaps be used to distinguish successful voting strategies.
+
+## Next steps 
