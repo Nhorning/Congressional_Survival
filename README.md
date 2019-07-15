@@ -112,7 +112,7 @@ Note that in the Senate, this plot does not take into account which members stoo
 ## Machine Learning
 
 ### Dimension Reduction
-</details>
+<details>
 
 ![dimension_v_explained_variance](images/dimension_v_explained_variance.png)
 
@@ -124,7 +124,7 @@ Note that in the Senate, this plot does not take into account which members stoo
 </details>
 
 ### Clustering
-</details>
+<details>
 
 ![PCA_House_Cluster](images/PCA_House_Cluster.png)
 ![PCA_Senate_Cluster](images/PCA_Senate_Cluster.png)
@@ -134,7 +134,7 @@ Note that in the Senate, this plot does not take into account which members stoo
 </details>
 
 ### Predictive Modeling
-</details>
+<details>
 
 ![RBF_SVM_Without](images/RBF_SVM_Without.png)
 ![RBF_SVM_With](images/RBF_SVM_With.png)
