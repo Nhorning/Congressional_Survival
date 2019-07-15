@@ -110,41 +110,69 @@ Note that in the Senate, this plot does not take into account which members stoo
 </details>
 
 ## Machine Learning
-
 ### Dimension Reduction
+
 <details>
+In the previous exploratory data analysis, ideological scores had been pre-calculated in the dataset using "dw_nominate", a multi-dimensional scaling method, developed in the 80's. In this method, congressional voting records are interpreted along two dimensions, the first being liberal vs. conservative economic ideology, and the second usually corresponding to social values. Let's see if we can "roll our own" dw_nominate scores. This can be done with PCA, or Primary Component Analysis.
 
 ![dimension_v_explained_variance](images/dimension_v_explained_variance.png)
+
+
+Explained variance can be used to determine the optimal number of dimensions to used to represent a data set.
+
+According to the plot, most of the variation in the data is explained by component '0' with component '1' providing much less, but probably enough to be useful, and component '2' providing even less than that. This means it is likely possible to interpret results in 2 dimensions quite easily, with 3 dimensions looking unnecessary (but at least possible to visualize).
+
+This is consistent with the approach used by "dw_nominate."
+
 
 ![PCA_House_Party](images/PCA_House_Party.png)
 ![PCA_Senate_Party](images/PCA_Senate_Party.png)
 
+As shown, PCA can neatly separate the parties from one another based entirely on voting records, for both the house and the senate. It can probably be assumed that "component_0" roughly corresponds with liberal vs. conservative voting records. "Component_1" may align with social values, but this won't be clear without further analysis 
+
 ![lean_v_component_0_house](images/lean_v_componet_0_house.png)
+![lean_v_component_0_senate](images/lean_v_component_0_regression_senate.png)
+
+While primary "component_0" seems to leave the parties a bit flat compared to dw_nominate scores, it appears that it may be an even better predictor of a given member's chance of being eliminated, when combined with partisan lean.
 
 </details>
 
-### Clustering
+### Unsupervised learning
 <details>
-
+Unsupervised machine learning distinguishes patterns in data without pre-labing it for training.
+  
 ![PCA_House_Cluster](images/PCA_House_Cluster.png)
 ![PCA_Senate_Cluster](images/PCA_Senate_Cluster.png)
 
+In this case, KMeans clustering is being used to easily distinguish the two parties from one another, based only on their dimension reduced voting behavior. Kmeans is only being told to find two clusters without labeling the political parties for it ahead of time, and has done so with only two two errors (both in the house).  
+
 ![Multi_Cluster](images/multi_cluster_2018_house.png)
+
+Here, multiple unsupervised clustering methods are being used to label dimension reduced voting from the 2018 house. Affinity Propagation and DBSCAN automatically determine an appropriate number of clusters for themselves. Kmeans and Agglomerative clustering have been told to find 3 clusters to similar results. With more analysis, this method could possibly be used to tease out the voting differences between different distinct groups, and perhaps determine their differential survival. However, predictive modeling through supervised learning is likely to more directly address the problem. 
 
 </details>
 
-### Predictive Modeling
+### Supervised Learning
 <details>
 
 ![RBF_SVM_Without](images/RBF_SVM_Without.png)
 ![RBF_SVM_With](images/RBF_SVM_With.png)
 
+Here the RBF, SVM (Radial Basis Function Support Vector Machine) classifier is being fed the same dimension reduced voting data from the 115th house, but is being trained to predict which members will be eliminated using a randomly selected two thirds of the dataset. In the training plot on the left, members labeled “True”, were eliminated, and “False” were not. In the testing plot on the right, the classifier is giving it's best guess with the remaining 3rd of the data, with incorrect guesses being crossed out. The surrounding contours represent the decision function of the model on the two dimensional plane we can see.
+
+In the first set of plots, the classifier is using 'component_0' and 'component_1' combined with a 3rd partisan lean dimension to classify who was eliminated.  However, in the second set of plots, 'component_1' has been replaced with a dimension corresponding to the residuals of a linear regression of component_0 and district lean. This is to additionally represent how far out of line a congress person's voting record is with the partisan lean of their district.  
+
 ![CV_scores_without](images/CV_scores_without.png)
 ![Cv_scores_with.png](images/Cv_scores_with.png)
 
+The training and testing sequence is done with each 3rd of the data, using the other two thirds for training, to create a 3-fold crossvalidation score average, which has been done here across several different classifiers. Accuracy is not a useful metric in this case as the data is unbalanced, and predicting that 100% of the members survived results in roughly 80% success. So, the focus will be on positive classifications. "Precision" is the proportion of positive classifications that are correct, while "recall" is the proportion of total positive values that have been correctly classified. 
+
+Replacing 'component_1' with a metric for how far out of line a given congress person's voting behavior is with their constituents results an improvement in the metrics of most of the models, even when partisan lean is already included in the model.
+
+Note that these models are still limited to using data from the 115th congress, which may result in over-fitting to the results of the 2018 elections.
 </details>
 
-## Findings (need to update)
+## Findings
 
 1. Members with voting records more aligned with the partisan lean of their districts appear to survive longer
 
@@ -152,6 +180,14 @@ Note that in the Senate, this plot does not take into account which members stoo
 
 3. There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
 
-4. Clear patterns exist in roll call voting that can perhaps be used to distinguish successful voting strategies.
+4. Voting behavior in line with the partisan lean of constituents is an important indicator of congressional survival. 
 
-## Next steps 
+## Possible Next steps 
+
+1. Create a fully fledged predictive model using 20 years of data. As historical partisan lean from FiveThirtyEight and the Cook Political Report is not readily available, it may need to be constructed from federal elections returns. Select and tune the best performing classifier
+
+2. Investigate the delta (difference) between different unsupervised clusters and different ends of the political spectrum to find precisely which bills are different, and therefore what dimension reduction is measuring.  Explore the possible advantages of custom dimension reduction over pre-calculated dw_nominate scores, such as evaluating one party at a time, or differences over bespoke time periods.
+
+3. Experiment with using cluster ids from unsupervised learning to improve the predictive power of the supervised model.
+
+4. Use Naive Bayes classifier, without dimension reduction, to map which individual votes effected chances of elimination the most for a given set of congressional members.
