@@ -129,6 +129,8 @@ Note that in the Senate, this plot does not take into account which members stoo
 ![PCA_House_Cluster](images/PCA_House_Cluster.png)
 ![PCA_Senate_Cluster](images/PCA_Senate_Cluster.png)
 
+![Multi_Cluster](images/multi_cluster_2018_house.png)
+
 </details>
 
 ### Predictive Modeling
