@@ -171,13 +171,17 @@ Note that these models are still limited to using data from the 115th congress, 
 
 ## Findings
 
-1. Members with voting records more aligned with the partisan lean of their districts appear to survive longer
+1. Voting behavior in line with the partisan lean of constituents is an important predictive indicator of congressional survival. 
 
-2. Members with voting records more extreme than the partisan lean of their constituents appear less likely to survive than those with a voting record more moderate than their constituents. 
+2. Members with voting records more “extreme” than the partisan lean of their constituents are less likely to survive than those with a more moderate one than their constituents
 
-3. There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
+3.There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
 
-4. Voting behavior in line with the partisan lean of constituents is an important indicator of congressional survival. 
+## Recomendations
+
+1. To survive in an R+22 district, pursue one of the most moderate voting records in the house. Otherwise survival is highly unlikely.
+
+2. House members take on less risk by voting more “moderate” than the partisan lean in their district than more “radical.” So it is better for the survival of the delegation for members in safe districts to vote less radical than it is for members in swing districts to be less moderate.
 
 ## Possible Next steps 
 
