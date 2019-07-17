@@ -5,7 +5,7 @@ Based on their voting history, what type of congressional member is most likely 
 Election results are highly dependent on voter enthusiasm, partisan lean, and the national political environment.  However, when voting on legislation, members of congress in swing districts must do a cost benefit analysis of meeting the partisan preferences of their district or the expectations of their own base. What type of strategy most successfully predicts survival?
 
 ## Client / Stakeholder case:
-The theoretical client is an individual representative or senator wishing to know how their voting behavior might influence their chances of re-election, or a National level party organ such as the Democratic National Committee looking to inform voting strategy. 
+Audrey Denney is a  Democratic congresswoman from California District 1, she was recently elected after a very close contest with Doug LaMalfa in 2020, riding the historic blue wave that swept Trump out of office. CA-1 is a rural, traditionally Republican district with a partisan lean of R+22.53. She wants to know what type of voting strategy will help her survive next election. Other stakeholders include could a National level party organ such as the Democratic National Committee looking to inform voting strategy.
 
 ## Data Sets
 <details>
