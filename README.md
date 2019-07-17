@@ -177,7 +177,7 @@ Note that these models are still limited to using data from the 115th congress, 
 
 3.There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
 
-## Recomendations
+## Recommendations
 
 1. To survive in an R+22 district, pursue one of the most moderate voting records in the house. Otherwise survival is highly unlikely.
 
