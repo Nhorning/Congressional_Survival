@@ -9,17 +9,14 @@ The theoretical client is an individual representative or senator wishing to kno
 
 ## Data Sets
 <details>
-The primary dataset is congressional voting records going back to 1981 available from the House and Senate clerk offices via the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
+  
+- congressional voting records going back to 1981 available from the House and Senate clerk offices via the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api).
 
 
 - Partisan lean of [districts](Data/fivethirtyeight_partisan_lean_DISTRICTS.csv) and [states](Data/fivethirtyeight_partisan_lean_STATES.csv) available from [FiveThirtyEight](https://github.com/fivethirtyeight/data/):
 
 Partisan lean is the average difference between how a state or district votes and how the country votes overall, with 2016 presidential election results weighted 50 percent, 2012 presidential election results weighted 25 percent and results from elections for the state legislature weighted 25 percent.
 
-### Prospective datasets:
-
-- [Predictions](Data/vote_predictions.csv) of partisan votes based on district lean, also available from fivethirtyeight
-- The [voteview dataset](https://voteview.com/data) stores congressional voting records and ideological scores going back to the first congress in 1781.
 </details>
 
 ## Data Wrangling and Cleaning:
