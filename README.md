@@ -242,5 +242,5 @@ given voting score and partisan lean
 ...and different ends of the political spectrum to find precisely which bills are different, and therefore what dimension reduction is measuring.  Explore the possible advantages of custom dimension reduction over pre-calculated dw_nominate scores, such as evaluating one party at a time, or differences over bespoke time periods.
 
 ### 4. Map which individual votes effected chances of elimination the most.
-This can probably done with Naive Bayes classifier without using. dimension reduction
+This can probably done with Naive Bayes classifier without using dimension reduction.
 
