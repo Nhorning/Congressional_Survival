@@ -171,18 +171,49 @@ In the testing plot, the classifier is giving it's best guess with the remaining
 
 ![Naive Bayes Senate](images/Niave_bayes_senate.png)
 
-If the parties are overlaid on each other so that higher values of ‘lean’ represent preference for the other party, and the y axis represents distance from the regression line (being “in-line” with constituents). The problem becomes more simple to process, and more algorithms can beat baseline in their predictions.
+Here, the same Naive Bayes classifier is being trained on aggregate
+2006 - 2016 Senate voting data to predict elimination of Senators.
+Note the same patterns emerge more symmetrically when combined
+over 10 elections.
+
+Senators in states with the highest partisan lean in their favor are
+clearly the safest. However, those in states with partisan leans up to
+25 points against them are still in a safer zone if their voting record
+matches their constituents.
 
 ![Naive Bayes Senate Folded](images/naive_bayes_senate_folded.png)
 
-The training and testing sequence is done with each 4rd of the data, using the other two thirds for training, to create a 4-fold cross validation score average, which has been done here across several different classifiers. Mean cross validation scores - using residuals. Undersampling survivors produces a baseline of 0.55, which an algorithm could achieve by guessing all survived. By overlaying / transposing parties 5 classifiers achieve a mean score over this baseline.
+
+If the parties are overlaid on each other so that higher values of ‘lean’ represent preference for the other party, and the y axis represents distance from the regression line (being “in-line” with constituents). The problem becomes more simple to process, and more algorithms can beat baseline in their predictions.
+
 
 ![Mean Cross Validation Scores Using Residual Model](images/mean_cross_validation_residuals.png)
 
+The training and testing sequence is done with each 4rd of the data, using the other two thirds for training, to create a 4-fold cross validation score average, which has been done here across several different classifiers. Mean cross validation scores - using residuals. Undersampling survivors produces a baseline of 0.55, which an algorithm could achieve by guessing all survived. By overlaying / transposing parties 5 classifiers achieve a mean score over this baseline.
+
 ![Mean Cross Validation Scores Using Residuals Folded](images/mean_cross_validation_residuals_folded.png)
 
+"Precision" is the proportion of
+positive classifications that are
+correct.
+
+"Recall" is the proportion of total
+positive values that have been
+correctly classified.
+
+Random forrest’s precision of .6 and
+recall of .5 means when it predicts a
+given house member is eliminated it
+is correct 60% of the time, and is able
+to identify 50% of those which were
+eliminated.
+
+Not great; Not terrible. But, we have
+already answered our hypothesis
+
+
 The reduction in complexity for the a given machine learning algorithm can be seen in the
-decision boundary contours of three of the classifiers performing above baseline.
+decision boundary contours of three of the classifiers performing above baseline:
 
 ![Decision Tree Senate](images/Decision_Tree_Seanate.png)
 ![Decision Tree Senate Folded](images/Decision_Tree_Seanate_Folded.png)
