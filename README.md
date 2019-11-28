@@ -213,20 +213,17 @@ of the ideological spectrum of their party.
 
 ## Recommendations
 
-1. To survive in an R+22 district, pursue one of the
-most moderate voting records in the house.
+### 1. To survive in an R+22 district, pursue one of the most moderate voting records in the house.
 Otherwise survival is highly unlikely.
 
-2. Members take on less risk by voting more
-“moderate” than the partisan lean in their district
-than more “radical.” So it is better for the survival
+### 2. Members take on less risk by voting more “moderate” than the partisan lean in their district than more “radical.” 
+So it is better for the survival
 of the delegation for members in safe districts to
 vote less radical than it is for members in swing
 districts to be less moderate.
 
-3. Find as many opportunities as possible to find
-common ground and vote in line with constituents
-without sacrificing core values
+### 3. Find as many opportunities as possible to find common ground with the other party.
+vote in line with constituents without sacrificing core values
 
 ## Possible Next steps 
 
