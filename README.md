@@ -128,9 +128,20 @@ This is consistent with the approach used by "dw_nominate."
 As shown, PCA can neatly separate the parties from one another based entirely on voting records, for both the house and the senate. It can probably be assumed that "component_0" roughly corresponds with liberal vs. conservative voting records. "Component_1" may align with social values, but this won't be clear without further analysis 
 
 ![lean_v_component_0_house](images/lean_v_componet_0_house.png)
+
+While primary "component_0" seems to leave the parties a bit flat compared to dw_nominate scores, perhaps it can be a predictor of a given member's chance of being eliminated, when combined with partisan lean. However, historical partisan lean for house races is not yet open data, making incorporation of previous house races quite difficult.
+
 ![lean_v_component_0_senate](images/lean_v_component_0_regression_senate.png)
 
-While primary "component_0" seems to leave the parties a bit flat compared to dw_nominate scores, it appears that it may be an even better predictor of a given member's chance of being eliminated, when combined with partisan lean.
+Historical partisan lean for the Senate can be relatively easily constructed using election
+returns, allowing the aggregation of data from senate races from 2006 to 2016. Note the
+apparent zones of safety along the regression line. These Senators are voting “in line” with
+their constituents.
+
+Partisan lean according to FiveThirtyEight is the average difference between how a
+state or district votes and how the country votes overall w/ the current presidential
+election results weighted at 50%, the previous weighted at 25%, and the results from
+elections for the state legislature weighted at 25%
 
 </details>
 
@@ -152,21 +163,18 @@ Here, multiple unsupervised clustering methods are being used to label dimension
 ### Supervised Learning
 <details>
 
-![RBF_SVM_Without](images/RBF_SVM_Without.png)
-![RBF_SVM_With](images/RBF_SVM_With.png)
 
-Here the RBF, SVM (Radial Basis Function Support Vector Machine) classifier is being fed the same dimension reduced voting data from the 115th house, but is being trained to predict which members will be eliminated using a randomly selected two thirds of the dataset. In the training plot on the left, members labeled “True”, were eliminated, and “False” were not. In the testing plot on the right, the classifier is giving it's best guess with the remaining 3rd of the data, with incorrect guesses being crossed out. The surrounding contours represent the decision function of the model on the two dimensional plane we can see.
+Here the Naive Bayes classifier is being fed dimension reduced voting data from the 115th house, and is being trained to predict which members will be eliminated. In the training set plot (top) members labeled “True”, were eliminated, and “False” were not. 
 
-In the first set of plots, the classifier is using 'component_0' and 'component_1' combined with a 3rd partisan lean dimension to classify who was eliminated.  However, in the second set of plots, 'component_1' has been replaced with a dimension corresponding to the residuals of a linear regression of component_0 and district lean. This is to additionally represent how far out of line a congress person's voting record is with the partisan lean of their district.  
+In the testing plot (bottom), the classifier is giving it's best guess with the remaining 4th of the data. The contour lines of the decision function show 2018 was a bad year for republicans and that one year isn’t nearly enough data to generalize.
 
-![CV_scores_without](images/CV_scores_without.png)
-![Cv_scores_with.png](images/Cv_scores_with.png)
+![Naive Bayes Senate](images/Niave_bayes_senate.png)
 
-The training and testing sequence is done with each 3rd of the data, using the other two thirds for training, to create a 3-fold crossvalidation score average, which has been done here across several different classifiers. Accuracy is not a useful metric in this case as the data is unbalanced, and predicting that 100% of the members survived results in roughly 80% success. So, the focus will be on positive classifications. "Precision" is the proportion of positive classifications that are correct, while "recall" is the proportion of total positive values that have been correctly classified. 
+If the parties are overlaid on each other so that higher values of ‘lean’ represent preference for the other party, and the y axis represents distance from the regression line (being “in-line” with constituents). The problem becomes more simple to process, and more algorithms can beat baseline in their predictions.
 
-Replacing 'component_1' with a metric for how far out of line a given congress person's voting behavior is with their constituents results an improvement in the metrics of most of the models, even when partisan lean is already included in the model.
+![Naive Bayes Senate Folded](images/naive_bayes_senate_folded.png)
 
-Note that these models are still limited to using data from the 115th congress, which may result in over-fitting to the results of the 2018 elections.
+The training and testing sequence is done with each 4rd of the data, using the other two thirds for training, to create a 4-fold cross validation score average, which has been done here across several different classifiers. Mean cross validation scores - using residuals. Undersampling survivors produces a baseline of 0.55, which an algorithm could achieve by guessing all survived. By overlaying / transposing parties 5 classifiers achieve a mean score over this baseline.
 </details>
 
 ## Findings
