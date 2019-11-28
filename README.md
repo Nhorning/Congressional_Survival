@@ -163,10 +163,11 @@ Here, multiple unsupervised clustering methods are being used to label dimension
 ### Supervised Learning
 <details>
 
+![Naive Bayes House](/images/naive_bayes_house.png)
 
-Here the Naive Bayes classifier is being fed dimension reduced voting data from the 115th house, and is being trained to predict which members will be eliminated. In the training set plot (top) members labeled “True”, were eliminated, and “False” were not. 
+Here the Naive Bayes classifier is being fed dimension reduced voting data from the 115th house, and is being trained to predict which members will be eliminated. In the training set plot members labeled “True”, were eliminated, and “False” were not. 
 
-In the testing plot (bottom), the classifier is giving it's best guess with the remaining 4th of the data. The contour lines of the decision function show 2018 was a bad year for republicans and that one year isn’t nearly enough data to generalize.
+In the testing plot, the classifier is giving it's best guess with the remaining 4th of the data. The contour lines of the decision function show 2018 was a bad year for republicans and that one year isn’t nearly enough data to generalize.
 
 ![Naive Bayes Senate](images/Niave_bayes_senate.png)
 
@@ -175,28 +176,74 @@ If the parties are overlaid on each other so that higher values of ‘lean’ re
 ![Naive Bayes Senate Folded](images/naive_bayes_senate_folded.png)
 
 The training and testing sequence is done with each 4rd of the data, using the other two thirds for training, to create a 4-fold cross validation score average, which has been done here across several different classifiers. Mean cross validation scores - using residuals. Undersampling survivors produces a baseline of 0.55, which an algorithm could achieve by guessing all survived. By overlaying / transposing parties 5 classifiers achieve a mean score over this baseline.
+
+![Mean Cross Validation Scores Using Residual Model](images/mean_cross_validation_residuals.png)
+
+![Mean Cross Validation Scores Using Residuals Folded](images/mean_cross_validation_residuals_folded.png)
+
+The reduction in complexity for the a given machine learning algorithm can be seen in the
+decision boundary contours of three of the classifiers performing above baseline.
+
+![Decision Tree Senate](images/Decision_Tree_Seanate.png)
+![Decision Tree Senate Folded](images/Decision_Tree_Seanate_Folded.png)
+
+![Random Forest](images/Random_Forrest_Senate.png)
+![Random Forest](images/Random_Forrest_Senate_folded.png)
+ 
+![ADA Boost](images/ADA_Boost_Senate.png)
+![ADA_Boost_Senate_folded.png](images/ADA_Boost_Senate_folded.png)
+
 </details>
 
 ## Findings
 
-1. Voting behavior in line with the partisan lean of constituents is an important predictive indicator of congressional survival. 
+1. Voting behavior “in line” with the partisan lean of
+constituents is an important predictive indicator of
+congressional survival. Members who do so survive
+longer
 
-2. Members with voting records more “extreme” than the partisan lean of their constituents are less likely to survive than those with a more moderate one than their constituents
+2. Members with voting records more “extreme” than
+the partisan lean of their constituents are less
+likely to survive than those with a more moderate
+one than their constituents
 
-3.There is a correlation between longer surviving members and voting records closer to the center of the ideological spectrum of their party.
+3. There is a correlation between longer surviving
+members and voting records closer to the center
+of the ideological spectrum of their party.
 
 ## Recommendations
 
-1. To survive in an R+22 district, pursue one of the most moderate voting records in the house. Otherwise survival is highly unlikely.
+1. To survive in an R+22 district, pursue one of the
+most moderate voting records in the house.
+Otherwise survival is highly unlikely.
 
-2. House members take on less risk by voting more “moderate” than the partisan lean in their district than more “radical.” So it is better for the survival of the delegation for members in safe districts to vote less radical than it is for members in swing districts to be less moderate.
+2. Members take on less risk by voting more
+“moderate” than the partisan lean in their district
+than more “radical.” So it is better for the survival
+of the delegation for members in safe districts to
+vote less radical than it is for members in swing
+districts to be less moderate.
+
+3. Find as many opportunities as possible to find
+common ground and vote in line with constituents
+without sacrificing core values
 
 ## Possible Next steps 
 
-1. Create a fully fledged predictive model using 20 years of data. As historical partisan lean from FiveThirtyEight and the Cook Political Report is not readily available, it may need to be constructed from federal elections returns. Select and tune the best performing classifier
+### 1. Bite the bullet. Buy historical partisan lean data.
+As historical partisan lean from FiveThirtyEight and the Cook
+Political Report is not open, just buy it. Then it will be possible to
+build a house model. Alternately, assist “open elections” project
+in producing it.
 
-2. Investigate the delta (difference) between different unsupervised clusters and different ends of the political spectrum to find precisely which bills are different, and therefore what dimension reduction is measuring.  Explore the possible advantages of custom dimension reduction over pre-calculated dw_nominate scores, such as evaluating one party at a time, or differences over bespoke time periods.
+### 2. Select and tune the best performing classifier.
+Calculate area under ROC curve, export applicable coeficents,
+and Identify precise percentage chances of elimination for a
+given voting score and partisan lean
 
-3. Experiment with using cluster ids from unsupervised learning to improve the predictive power of the supervised model.
+### 3. Investigate the delta (difference) between different unsupervised clusters
+...and different ends of the political spectrum to find precisely which bills are different, and therefore what dimension reduction is measuring.  Explore the possible advantages of custom dimension reduction over pre-calculated dw_nominate scores, such as evaluating one party at a time, or differences over bespoke time periods.
 
-4. Use Naive Bayes classifier, without dimension reduction, to map which individual votes effected chances of elimination the most for a given set of congressional members.
+### 4. Map which individual votes effected chances of elimination the most.
+This can probably done with Naive Bayes classifier without using. dimension reduction
+
